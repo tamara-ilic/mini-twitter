@@ -13,7 +13,8 @@ async function getUser(request, response) {
 }
 
 const UserController = {
-    getAllUsers
+    getAllUsers,
+    getUser
 }
 
 module.exports = UserController
