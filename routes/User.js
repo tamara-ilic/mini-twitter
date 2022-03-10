@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const User = require('../models/User')
 
+// GET all users
 router
     .route('/')
     .get(async (request, response) => {
@@ -9,6 +10,7 @@ router
         response.json(Users)
     })
 
+// GET one user by id
 router
     .route('/:id')
     .get(async (request, response) => {
@@ -16,8 +18,12 @@ router
         response.json(User)
     })
 
-module.exports = router
-
-// GET all users
-// GET one user by id
 // GET all messages belonging to one user
+// router
+//     .route('/:id/messages')
+//     .get(async (request, response) => {
+//         const Messages = await User.find({ _id: request.params.id }) // TODO: ask Chris
+//         response.json(Messages)
+//     })
+
+module.exports = router
