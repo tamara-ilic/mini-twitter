@@ -6,7 +6,8 @@ const MessageSchema = new mongoose.Schema(
         date: { required: true, type: Date },
         user_id: { required: true, type: Number },
         picture: { required: false, type: String }
-    }
+    },
+    { timestamps: true }
 );
 
 const Message = mongoose.model("Message", MessageSchema);
