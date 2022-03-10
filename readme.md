@@ -1,4 +1,4 @@
-# Mini Twitter API Guide
+# Mini Twitter API Documentation
 
 ## Table of Contents
 
@@ -21,13 +21,21 @@
 
 ## GET all users
 
+Return all users in the database ...
+
 ## GET one user by id
 
+Returns ...
+
 ## GET all messages for one user
+
+Return ...
 
 ## /messages
 
 ## GET all messages
+
+Returns all messages in the database ...
 
 ## GET one message by id
 
