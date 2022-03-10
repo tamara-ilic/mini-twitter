@@ -17,3 +17,7 @@ router
     })
 
 module.exports = router
+
+// GET all users
+// GET one user by id
+// GET all messages belonging to one user
