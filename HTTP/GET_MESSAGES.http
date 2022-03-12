@@ -1,4 +1,4 @@
-GET http://localhost/8585/messages
+GET http://localhost:8585/messages
 
 
 

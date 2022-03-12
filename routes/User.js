@@ -19,11 +19,11 @@ router
     })
 
 // GET all messages belonging to one user
-// router
-//     .route('/:id/messages')
-//     .get(async (request, response) => {
-//         const Messages = await User.find({ _id: request.params.id }) // TODO: ask Chris
-//         response.json(Messages)
-//     })
+router
+    .route('/:id/messages')
+    .get(async (request, response) => {
+        const Messages = await User.find({ _id: request.params.id }) // TODO: ask Chris
+        response.json(Messages)
+    })
 
 module.exports = router
