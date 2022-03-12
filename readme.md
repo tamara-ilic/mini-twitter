@@ -4,18 +4,18 @@
 
 ### [/users](#/users)
 
-- [GET all users](#get-all-users)
-- [GET one user by username](#get-one-user-by-username)
-- [GET all messages for one user](#get-all-messages-for-one-user)
+- [x] [GET all users](#get-all-users)
+- [x] [GET one user by username](#get-one-user-by-username)
+- [x] [GET all messages for one user](#get-all-messages-for-one-user)
 
 ### [/messages](#/messages)
 
-- [GET all messages](#get-all-messages)
-- [GET one message by id](#get-one-message-by-id)
+- [x] [GET all messages](#get-all-messages)
+- [x] [GET one message by id](#get-one-message-by-id)
 
 ### [/me](#/me)
 
-- [GET Random User](#get-random-user)
+- [ ] [GET Random User](#get-random-user)
 
 ## /users
 
