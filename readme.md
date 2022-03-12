@@ -5,7 +5,7 @@
 ### [/users](#/users)
 
 - [x] [GET all users](#get-all-users)
-- [x] [GET one user by username](#get-one-user-by-username)
+- [x] [GET one user by username](#get-one-user-by-id)
 - [x] [GET all messages for one user](#get-all-messages-for-one-user)
 
 ### [/messages](#/messages)
@@ -27,7 +27,7 @@
 
 Return all users as an array of objects
 
-## GET one user by username
+## GET one user by id
 
 | URL                                                      | METHOD |
 | -------------------------------------------------------- | ------ |
