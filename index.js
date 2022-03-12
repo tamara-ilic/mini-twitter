@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const port = process.env.port || 8585
 require('dotenv').config()
-const cors = require('cors')
 const connectToDB = require('./models')
+const cors = require('cors')
+const messageRouter = require('./routes/Message')
 const userRouter = require('./routes/User')
 
 app.use((request, result, next) => {
@@ -19,6 +20,7 @@ app.use((error, request, result, next) => {
     result.status(500).send('Something broke!')
 })
 
+app.use('/messages', messageRouter)
 app.use('/users', userRouter)
 
 connectToDB().then(() => {
