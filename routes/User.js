@@ -22,7 +22,7 @@ router
 router
     .route('/:id/messages')
     .get(async (request, response) => {
-        const Messages = await User.find({ _id: request.params.id }) // TODO: ask Chris
+        const Messages = await User.find({ _id: request.params.id.messages }) // TODO: ask Chris
         response.json(Messages)
     })
 

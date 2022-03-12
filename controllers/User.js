@@ -12,9 +12,15 @@ async function getUser(request, response) {
     response.json(user)
 }
 
+async function getAllMessagesByUser(request, response) {
+    const messages = await User.find({ _id: request.params.id.messages })
+    response.json(messages)
+}
+
 const UserController = {
     getAllUsers,
-    getUser
+    getUser,
+    getAllMessagesByUser
 }
 
 module.exports = UserController
