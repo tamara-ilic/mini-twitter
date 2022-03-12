@@ -8,12 +8,15 @@ async function getAllUsers(request, response, next) {
 }
 
 async function getUser(request, response) {
+    console.log('we are here')
     const user = await User.find({ _id: request.params.id })
+    // const user = await User.find({  "name": "Netty Portress" })
+    console.log(request.params.id);
     response.json(user)
 }
 
 async function getAllMessagesByUser(request, response) {
-    const messages = await User.find({ _id: request.params.id.messages })
+    const messages = await User.find({ id: request.params.id.messages })
     response.json(messages)
 }
 
