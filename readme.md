@@ -21,7 +21,11 @@
 
 ## GET all users
 
-Return all users in the database ...
+| URL       | METHOD |
+| --------- | ------ |
+| .../users | GET    |
+
+Return all users in the database: [{},{},...]
 
 ## GET one user by id
 
