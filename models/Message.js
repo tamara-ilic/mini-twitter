@@ -2,9 +2,9 @@ const mongoose = require('mongoose')
 
 const MessageSchema = new mongoose.Schema(
     {
-        handle: { required: true, type: String },
+        user_handle: { required: true, type: String },
         text: { required: true, type: String },
-        date: { required: true, type: Date },
+        user_id: { required: true, type: mongoose.Schema.Types.ObjectId },
         picture: { required: false, type: String }
     },
     { timestamps: true }
