@@ -9,13 +9,13 @@ async function getAllUsers(request, response, next) {
 }
 
 async function getUser(request, response) {
-    const user = await User.find({ handle: request.params.handle })
+    const user = await User.find({ _id: request.params.id })
     response.json(user)
 }
 
 async function getAllMessagesByUser(request, response) {
-    const messages = await Message.find({ handle: request.params.handle })
-    // console.log("messages", request.params.handle.messages)
+    const messages = await Message.find({ user_id: request.params.user_id })
+    console.log("messages", request.params.user_id)
     response.json(messages)
 }
 

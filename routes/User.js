@@ -15,12 +15,12 @@ router
 
 // GET one user by id
 router
-    .route('/:handle')
+    .route('/:id')
     .get(getUser)
 
 // GET all messages belonging to one user
 router
-    .route('/:handle/messages')
+    .route('/:user_id/messages')
     .get(getAllMessagesByUser)
 
 module.exports = router
