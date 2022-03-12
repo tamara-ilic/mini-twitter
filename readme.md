@@ -11,7 +11,7 @@
 ### [/messages](#/messages)
 
 - [GET all messages](#get-all-messages)
-- [GET one message by id](#get-one-message-by-id)
+- 
 
 ### [/me](#/me)
 
@@ -25,7 +25,7 @@
 | --------- | ------ |
 | .../users | GET    |
 
-Return all users as an array of users
+Return all users as an array of objects
 
 ## GET one user by id
 
@@ -47,9 +47,11 @@ Return ...
 
 ## GET all messages
 
-Returns all messages in the database ...
+| URL       | METHOD |
+| --------- | ------ |
+| .../messages | GET    |
 
-## GET one message by id
+Return all users as an array of objects
 
 ## /me
 
