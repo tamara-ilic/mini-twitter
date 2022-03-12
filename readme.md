@@ -29,6 +29,10 @@ Return all users in the database: [{},{},...]
 
 ## GET one user by id
 
+| URL       | METHOD |
+| --------- | ------ |
+| .../users/$[username} | GET
+
 Returns ...
 
 ## GET all messages for one user
