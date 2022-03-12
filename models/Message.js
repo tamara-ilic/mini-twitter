@@ -10,6 +10,10 @@ const MessageSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
+MessageSchema.pre('find', function() {
+    this.populate('author')
+})
+
 const Message = mongoose.model('Message', MessageSchema)
 
-module.exports = Message;
+module.exports = Message
