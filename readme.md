@@ -41,7 +41,7 @@ Returns one user
 | --------- | ------ |
 | .../users/${username}/messages | GET
 
-Return ...
+Returns all messages by one specific user as an array of objects
 
 ## /messages
 
