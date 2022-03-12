@@ -5,7 +5,8 @@ const MessageSchema = new mongoose.Schema(
         user_handle: { required: true, type: String },
         text: { required: true, type: String },
         user_id: { required: true, type: mongoose.Schema.Types.ObjectId },
-        picture: { required: false, type: String }
+        picture: { required: false, type: String },
+        author: { required: true, type: mongoose.Schema.Types.ObjectId, ref: 'User' }
     },
     { timestamps: true }
 );
