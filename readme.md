@@ -1,6 +1,5 @@
 # Mini Twitter API Documentation
 
-
 ## Table of Contents
 
 ### [/users](#/users)
@@ -22,25 +21,25 @@
 
 ## GET all users
 
-| URL       | METHOD |
-| --------- | ------ |
+| URL                                                | METHOD |
+| -------------------------------------------------- | ------ |
 | https://mini-twitter-crossover.herokuapp.com/users | GET    |
 
 Return all users as an array of objects
 
 ## GET one user by username
 
-| URL       | METHOD |
-| --------- | ------ |
-| https://mini-twitter-crossover.herokuapp.com/users/$[username} | GET
+| URL                                                      | METHOD |
+| -------------------------------------------------------- | ------ |
+| https://mini-twitter-crossover.herokuapp.com/users/$[id} | GET    |
 
-Returns one user 
+Returns one user
 
 ## GET all messages for one user
 
-| URL       | METHOD |
-| --------- | ------ |
-| https://mini-twitter-crossover.herokuapp.com/users/${username}/messages | GET
+| URL                                                                    | METHOD |
+| ---------------------------------------------------------------------- | ------ |
+| https://mini-twitter-crossover.herokuapp.com/users/${user_id}/messages | GET    |
 
 Returns all messages by one specific user as an array of objects
 
@@ -48,16 +47,16 @@ Returns all messages by one specific user as an array of objects
 
 ## GET all messages
 
-| URL       | METHOD |
-| --------- | ------ |
+| URL                                                   | METHOD |
+| ----------------------------------------------------- | ------ |
 | https://mini-twitter-crossover.herokuapp.com/messages | GET    |
 
 Return all users as an array of objects
 
 ## GET one message by id
 
-| URL       | METHOD |
-| --------- | ------ |
+| URL                                                         | METHOD |
+| ----------------------------------------------------------- | ------ |
 | https://mini-twitter-crossover.herokuapp.com/messages/${id} | GET    |
 
 ## /me
