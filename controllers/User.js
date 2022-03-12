@@ -8,9 +8,7 @@ async function getAllUsers(request, response, next) {
 }
 
 async function getUser(request, response) {
-    console.log('we are here')
     const user = await User.find({ _id: request.params.id })
-    // const user = await User.find({  "name": "Netty Portress" })
     console.log(request.params.id);
     response.json(user)
 }
