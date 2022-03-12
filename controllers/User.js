@@ -14,7 +14,7 @@ async function getUser(request, response) {
 }
 
 async function getAllMessagesByUser(request, response) {
-    const messages = await User.find({ messages: request.params.handle.messages })
+    const messages = await User.find({ handle: request.params.handle.messages })
     response.json(messages)
 }
 
