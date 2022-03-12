@@ -25,7 +25,7 @@
 | --------- | ------ |
 | .../users | GET    |
 
-Return all users in the database: [{},{},...]
+Return all users as an array of users
 
 ## GET one user by id
 
@@ -33,9 +33,13 @@ Return all users in the database: [{},{},...]
 | --------- | ------ |
 | .../users/$[username} | GET
 
-Returns ...
+Returns one user 
 
 ## GET all messages for one user
+
+| URL       | METHOD |
+| --------- | ------ |
+| .../users/$[username}/messages | GET
 
 Return ...
 
